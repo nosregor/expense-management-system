@@ -1,0 +1,16 @@
+{
+  "exclude": ["./coverage", "node_modules", "./dist", "__tests__", "jest.config.js"],
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "commonjs",
+    "rootDir": ".",
+    "outDir": "./dist",
+    "strict": true,
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["**/*.ts"]
+}

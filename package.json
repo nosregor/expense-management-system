@@ -1,0 +1,29 @@
+{
+  "name": "nx-monorepo",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "backend:test": "npm test -w backend",
+    "backend": "npm run dev -w backend",
+    "frontend": "npm run dev -w frontend",
+    "build:backend": "npm install -w backend",
+    "build:frontend": "npm install -w frontend",
+    "build": "concurrently \"npm run build:backend\" \"npm run build:frontend\"",
+    "start": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "seed:database": "npm run seed -w backend",
+    "test": "concurrently \"npm run backend:test\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "tsx": "^4.19.2"
+  },
+  "dependencies": {}
+}

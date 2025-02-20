@@ -1,0 +1,4 @@
+{
+  "exec": "ts-node --files server.ts --no-warnings",
+  "ext": ".ts,.js"
+}
