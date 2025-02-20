@@ -19,6 +19,8 @@ This is a simple Expense Management System with a React frontend and a Node.js b
 
 1. Start MongoDB locally or use a cloud service. [How to install](https://www.mongodb.com/docs/manual/administration/install-community/)
 
+> The following commands should be run from the root folder `~/expense-management-system/
+
 2. Initialise the app
 
 ```bash
