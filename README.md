@@ -61,6 +61,20 @@ npm run frontend
 npm run test
 ```
 
+## API Endpoints
+
+Below are the available API endpoints for the Expense Management System.
+
+## Expense Endpoints
+
+| **Method** | **Endpoint**    | **Description**                  | **Request Body**                                               | **Response**              |
+| ---------- | --------------- | -------------------------------- | -------------------------------------------------------------- | ------------------------- |
+| `GET`      | `/expenses`     | Get all expenses                 | -                                                              | `{ expenses: Expense[] }` |
+| `GET`      | `/expenses/:id` | Get a single expense by ID       | -                                                              | `{ expense: Expense }`    |
+| `POST`     | `/expenses`     | Create a new expense             | `{ description: string, amount: number, category: string }`    | `{ expense: Expense }`    |
+| `PUT`      | `/expenses/:id` | Update an existing expense by ID | `{ description?: string, amount?: number, category?: string }` | `{ expense: Expense }`    |
+| `DELETE`   | `/expenses/:id` | Delete an existing expense by ID |                                                                |                           |
+
 ## Improvements
 
 ### Usability Improvements

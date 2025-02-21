@@ -10,7 +10,7 @@ const connectOptions: ConnectOptions = {
 
 export async function connectDB(): Promise<Mongoose> {
   try {
-    const conn = await connect(MONGO_URI, connectOptions)
+    const conn = await connect('localhost', connectOptions)
     logger.info(`MongoDB :: connected to ${MONGO_URI}`)
     return conn
   } catch (error) {
