@@ -30,12 +30,12 @@ async function startServer() {
 }
 
 process.on('uncaughtException', error => {
-  logger.error('Uncaught Exception:', error)
+  logger.error(error, 'Uncaught Exception')
   process.exit(1)
 })
 
 process.on('unhandledRejection', (reason, promise) => {
-  logger.error('Unhandled Rejection at:', promise, 'Reason:', reason)
+  logger.error(reason, 'Unhandled Rejection', { promise })
   process.exit(1)
 })
 

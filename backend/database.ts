@@ -14,7 +14,7 @@ export async function connectDB(): Promise<Mongoose> {
     logger.info(`MongoDB :: connected to ${MONGO_URI}`)
     return conn
   } catch (error) {
-    logger.error('Failed to connect to MongoDB:', error)
+    logger.error(error, 'Failed to connect to MongoDB:')
     throw error
   }
 }
@@ -24,7 +24,7 @@ export async function disconnectDB(): Promise<void> {
     await connection.close()
     logger.info('MongoDB connection closed.')
   } catch (error) {
-    logger.error('Failed to disconnect from MongoDB:', error)
+    logger.error(error, 'Failed to disconnect from MongoDB:')
     throw error
   }
 }
@@ -35,7 +35,7 @@ connection.on('connecting', () => {
 })
 
 connection.on('error', error => {
-  logger.error(`MongoDB :: connection ${error}`)
+  logger.error(error, `MongoDB :: connection ${error}`)
 })
 
 connection.on('connected', () => {
