@@ -67,13 +67,15 @@ Below are the available API endpoints for the Expense Management System.
 
 ## Expense Endpoints
 
-| **Method** | **Endpoint**    | **Description**                  | **Request Body**                                               | **Response**              |
-| ---------- | --------------- | -------------------------------- | -------------------------------------------------------------- | ------------------------- |
-| `GET`      | `/expenses`     | Get all expenses                 | -                                                              | `{ expenses: Expense[] }` |
-| `GET`      | `/expenses/:id` | Get a single expense by ID       | -                                                              | `{ expense: Expense }`    |
-| `POST`     | `/expenses`     | Create a new expense             | `{ description: string, amount: number, category: string }`    | `{ expense: Expense }`    |
-| `PUT`      | `/expenses/:id` | Update an existing expense by ID | `{ description?: string, amount?: number, category?: string }` | `{ expense: Expense }`    |
-| `DELETE`   | `/expenses/:id` | Delete an existing expense by ID | -                                                              | -                         |
+## Expense Endpoints
+
+| **Method** | **Endpoint**    | **Description**                  | **Query Parameters**                                                                                            | **Request Body**                                               | **Response**              |
+| ---------- | --------------- | -------------------------------- | --------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- | ------------------------- |
+| `GET`      | `/expenses`     | Get all expenses                 | `category` (optional): Filter by category (e.g., `MEALS`)<br>`amount` (optional): Filter by amount (e.g., `15`) | -                                                              | `{ expenses: Expense[] }` |
+| `GET`      | `/expenses/:id` | Get a single expense by ID       | -                                                                                                               | -                                                              | `{ expense: Expense }`    |
+| `POST`     | `/expenses`     | Create a new expense             | -                                                                                                               | `{ description: string, amount: number, category: string }`    | `{ expense: Expense }`    |
+| `PUT`      | `/expenses/:id` | Update an existing expense by ID | -                                                                                                               | `{ description?: string, amount?: number, category?: string }` | `{ expense: Expense }`    |
+| `DELETE`   | `/expenses/:id` | Delete an expense by ID          | -                                                                                                               | -                                                              | `{ }`                     |
 
 ## Improvements
 
