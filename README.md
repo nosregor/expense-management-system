@@ -88,7 +88,7 @@ Below are the available API endpoints for the Expense Management System.
 - Add empty State messaging - Instead of showing "No expenses found," you can add a button to create a new expense directly from the empty state.
 - Add notification toast for success and failure
 
-### Backend improvements:
+### Backend improvements
 
 - Amount formatting with currency info/locale
 - API documentation (Swagger or Postman)
@@ -100,9 +100,7 @@ Below are the available API endpoints for the Expense Management System.
 
 ## Preparing for Deployment
 
-1. **Environment Variables**:
-
-- configure environment variables for sensitive data like database credentials. Keep secrets secure.
+1. **Environment Variables**: configure environment variables for sensitive data like database credentials. Keep secrets secure.
 
 2. **Input Validation**:
 
@@ -112,7 +110,7 @@ Below are the available API endpoints for the Expense Management System.
 3.  **Error handling**:
 
 - centralized error handling to gracefully handle unexpected issues and effective logging helps in debugging and monitoring.
-- we added a custom error handling middleware
+- I added a custom error handling middleware
 
 4. **Logging**:
 
@@ -120,11 +118,9 @@ Below are the available API endpoints for the Expense Management System.
 - I chose to use [pino](https://github.com/pinojs/pino) and [pino-pretty](https://github.com/pinojs/pino-pretty)
 - automatic logging of request/response with [pino-http](https://github.com/pinojs/pino-http)
 
-5. **Security Headers and Middleware**:
+5. **Security Headers and Middleware**: I added security-focused middleware [helmet](https://github.com/helmetjs/helmet) to automatically set security headers
 
-- we use security-focused middleware [helmet](https://github.com/helmetjs/helmet) to automatically set security headers
-
-5. **Dockerize**: Create a `Dockerfile` for easy deployment.
+6. **Dockerize**: Create a `Dockerfile` for easy deployment.
 
 ## Deployment options
 
@@ -155,7 +151,7 @@ Successfully deploying and scaling our application ensures it can handle traffic
 
 4. **Caching**
 
-- Implement caching mechanisms to reduce the load on application servers.
+- Implement caching mechanism to reduce the load on application servers.
 - Tools like Redis or Memcached can cache frequently accessed data and improve response times.
 
 5. **Security**
