@@ -65,24 +65,25 @@ npm run test
 
 ### Usability Improvements
 
-- Add user authentication
+- Add user login
 - Add filtering and sorting expenses
 - Adding more fields such as date
 - Adding pagination, filtering and sorting
 - Add a Loading Spinner, for a better user experience.
-- Add Error Boundaries - Wrap the App component in an error boundary to gracefully handle unexpected errors.
-- Add Empty State messaging - Instead of showing "No expenses found," you can add a button to create a new expense directly from the empty state.
+- Add error handling on the front end
+- Add empty State messaging - Instead of showing "No expenses found," you can add a button to create a new expense directly from the empty state.
 - Add notification toast for success and failure
 
 ### Backend improvements:
 
-- Amount formater ting with currency info/locale
+- Amount formatting with currency info/locale
 - API documentation (Swagger or Postman)
 - Authentication & Authorization
 - Adding observability (i.e. honeycomb, sentry)
 - Add a rate limiter (limiting the number of requests per user)
 - Add caching strategy
 - Add integration tests
+- Consider using transactional operations that require atomicity reads and writes
 
 ## Production-Ready Considerations
 
