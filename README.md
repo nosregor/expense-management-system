@@ -84,7 +84,6 @@ Below are the available API endpoints for the Expense Management System.
 - Add user login
 - Add filtering and sorting expenses
 - Adding more fields such as date
-- Adding pagination, filtering and sorting
 - Add a Loading Spinner, for a better user experience.
 - Add error handling on the front end
 - Add empty State messaging - Instead of showing "No expenses found," you can add a button to create a new expense directly from the empty state.
@@ -92,7 +91,7 @@ Below are the available API endpoints for the Expense Management System.
 
 ### Backend improvements
 
-- Amount formatting with currency info/locale
+- Amount formatting, save amount in cents
 - API documentation (Swagger or Postman)
 - Authentication & Authorization: implement secure authentication mechanisms and proper authorization controls. (JWT or OAuth for token-based authentication)
 - Rate Limiting and DDoS Protection: implement rate limiting to prevent abuse of your APIs and mitigate distributed denial-of-service attacks.
