@@ -81,9 +81,12 @@ Below are the available API endpoints for the Expense Management System.
 
 ### Usability Improvements
 
-- Add user login
-- Add filtering and sorting expenses
+- Add form validation
+- Add sorting on fields
+- Add filtering
 - Adding more fields such as date
+- Add caching strategy
+- Add user login
 - Add a Loading Spinner, for a better user experience.
 - Add error handling on the front end
 - Add empty State messaging - Instead of showing "No expenses found," you can add a button to create a new expense directly from the empty state.
@@ -94,8 +97,7 @@ Below are the available API endpoints for the Expense Management System.
 - Amount formatting, save amount in cents
 - API documentation (Swagger or Postman)
 - Authentication & Authorization: implement secure authentication mechanisms and proper authorization controls. (JWT or OAuth for token-based authentication)
-- Rate Limiting and DDoS Protection: implement rate limiting to prevent abuse of your APIs and mitigate distributed denial-of-service attacks.
-- Add caching strategy
+- Rate Limiting and DDoS Protection (ex: [express-rate-limit](https://www.npmjs.com/package/express-rate-limit))
 - Enhance testing with integration tests
 - Consider using transactional operations that require atomicity reads and writes
 
